@@ -27,10 +27,6 @@ public class ReverseInt {
             int num = x % 10;
             x = x / 10;
             int temp = result * 10 + num;
-            System.out.println(temp);
-            System.out.println(num);
-            System.out.println(result);
-            System.out.println((temp - num) / 10);
             if ((temp - num) / 10 != result ) {
                 return 0;
             }
