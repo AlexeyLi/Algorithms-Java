@@ -56,3 +56,6 @@ public class FizzBuzzTest {
 
     }
 }
+
+// Time - O(n)
+// Memory - O(n)
