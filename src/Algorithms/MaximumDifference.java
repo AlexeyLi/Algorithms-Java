@@ -30,7 +30,8 @@ public class MaximumDifference {
         return max - min;
     }
 
-    // O(n)
+    // Time: O(n)
+    // Memory: O(1)
 
     public static int sortedArrMaximumDiff(int arr[]) {
         Arrays.sort(arr);

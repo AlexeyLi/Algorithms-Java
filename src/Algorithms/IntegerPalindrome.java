@@ -1,6 +1,8 @@
 package Algorithms;
 
-public class PalindromeNumber {
+import java.util.ArrayList;
+
+public class IntegerPalindrome {
 
     /* Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
        Example 1:
@@ -21,10 +23,23 @@ public class PalindromeNumber {
        Could you solve it without converting the integer to a string?
      */
 
-    public static boolean isPalindromeNumber(int x) {
+    public static boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
 
-        
+        int y = x;
+        int result = 0;
 
-        return false;
+        while (x > 0) {
+            int num = x % 10;
+            x = x / 10;
+            int temp = result * 10 + num;
+            result = temp;
+        }
+        return result == y;
     }
+
+    // Time: O(lg(n))
+    // Memory: O(1)
 }
