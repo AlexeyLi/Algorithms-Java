@@ -21,6 +21,8 @@ public class CloneEvenNumbers {
         }
         return nums;
     }
+    // Time: O(n)
+    // Memory: O(1)
 
     private int findLastNum(int[] nums) {
         for (int i = nums.length - 1; i >= 0; i--) {
