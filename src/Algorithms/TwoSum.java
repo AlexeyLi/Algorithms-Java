@@ -1,6 +1,7 @@
 package Algorithms;
 
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
 /*  1. Input: What is the input parameter?
     2. Output: What is the datatype of your answer that your function has to return?
     3. What data structures and methods associated with it will be used?
