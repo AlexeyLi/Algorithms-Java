@@ -26,4 +26,14 @@ public class TwoSumTest {
         int[] actualResult = twoSum.twoSumHashmap(array, target);
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
+
+    @Test
+    void testTwoSumTraverseArray() {
+        int[] array = {1, 3, 4, 6, 8, 10};
+        int target = 14;
+        int[] expectedResult = {2, 5};
+        TwoSum twoSum = new TwoSum();
+        int[] actualResult = twoSum.twoSumTraverseArrayFromBothEnds(array, target);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
 }

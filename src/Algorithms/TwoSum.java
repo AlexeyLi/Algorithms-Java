@@ -43,4 +43,24 @@ public class TwoSum {
     }
     // Time: O(n)
     // Memory: O(n)
+
+    // The array must be sorted
+    public int[] twoSumTraverseArrayFromBothEnds(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
+
+        while (start < end) {
+            if (nums[start] + nums[end] == target) {
+                return new int[] {start, end};
+            } else if (nums[start] + nums[end] < target) {
+                start +=1;
+            } else if (nums[start] + nums[end] > target) {
+                end -= 1;
+            }
+        }
+
+        return null;
+    }
+    // Time: O(n)
+    // Memory: O(1)
 }
