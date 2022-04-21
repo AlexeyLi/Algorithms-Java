@@ -6,6 +6,10 @@ package Algorithms;
 public class ReverseWordsInString {
 
     public String reverseWordsInString(String sentence) {
+        if (sentence.isEmpty()) {
+            return null;
+        }
+
         int end = sentence.length();
         StringBuilder result  = new StringBuilder();
 

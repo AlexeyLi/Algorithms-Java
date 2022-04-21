@@ -15,6 +15,10 @@ package Algorithms;
 public class ArraySquare {
 
     public int[] arraySquare(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
         int start = 0;
         int end = nums.length - 1;
         int[] result = new int[nums.length];
@@ -32,6 +36,8 @@ public class ArraySquare {
         }
         return result;
     }
+    // Time: O(n)
+    // Memory: O(n)
 
     private int abs(int num) {
         return num < 0? num * -1: num;

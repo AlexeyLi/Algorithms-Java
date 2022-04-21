@@ -5,6 +5,10 @@ package Algorithms;
 public class CloneEvenNumbers {
 
     public int[] cloneEvenNumbers(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
         int end = nums.length;
         int lastNum = findLastNum(nums);
 

@@ -15,6 +15,10 @@ package Algorithms;
 public class ReverseArray {
 
     public int[] reverseArray(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
         int start = 0;
         int end = nums.length - 1;
         int temp;
@@ -28,4 +32,6 @@ public class ReverseArray {
         }
         return nums;
     }
+    // Time: O(n)
+    // Memory: O(1)
 }

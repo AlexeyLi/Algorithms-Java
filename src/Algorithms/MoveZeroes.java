@@ -15,6 +15,10 @@ package Algorithms;
 public class MoveZeroes {
 
     public int[] moveZeroes(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
         int writePoint = 0;
 
         for (int readPoint = 0; readPoint < nums.length; readPoint++) {
