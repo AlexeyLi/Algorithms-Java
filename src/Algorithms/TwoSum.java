@@ -12,6 +12,8 @@ package Algorithms;
     8. Memory complexity?
  */
 
+import com.sun.tools.javac.util.Pair;
+
 import java.util.HashMap;
 
 public class TwoSum {
@@ -35,6 +37,10 @@ public class TwoSum {
     // Memory: O(1)
 
     public int[] twoSumHashmap(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
@@ -51,6 +57,10 @@ public class TwoSum {
 
     // The array must be sorted
     public int[] twoSumTraverseArrayFromBothEnds(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
         int start = 0;
         int end = nums.length - 1;
 
@@ -64,6 +74,39 @@ public class TwoSum {
             }
         }
 
+        return null;
+    }
+    // Time: O(n)
+    // Memory: O(1)
+
+    public Pair<Integer, Integer> twoSumSlidingWindow(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
+        int start = 0;
+        int end = 0;
+        int sum = nums[start];
+
+        while (start < nums.length) {
+            if (start > end) {
+                end = start;
+                sum = nums[start];
+            }
+
+            if (sum < target) {
+                if (end == nums.length - 1) {
+                    break;
+                }
+                end += 1;
+                sum += nums[end];
+            } else if (sum > target) {
+                sum -= nums[start];
+                start += 1;
+            } else {
+                return new Pair<>(start, end);
+            }
+        }
         return null;
     }
     // Time: O(n)
