@@ -1,6 +1,7 @@
 package Algorithms;
 
-// Given an array of integers A and a pivot, rearrange A in the following order: [Elements less than pivot, elements equal to pivot, elements greater than pivot]
+// Given an array of integers A and a pivot, rearrange A in the following order:
+// [Elements less than pivot, elements equal to pivot, elements greater than pivot]
 
 /*  1. Input: What is the input parameter?
     2. Output: What is the datatype of your answer that your function has to return?

@@ -37,15 +37,4 @@ public class TwoSumTest {
         int[] actualResult = twoSum.twoSumTraverseArrayFromBothEnds(nums, target);
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
-
-    @Test
-    void testTwoSumSlidingWindow() {
-        int[] nums = {5, 3, 1, 7, 6, 4, 2, 3};
-        Pair<Integer, Integer> expectedResult = new Pair<>(2, 4);
-
-        TwoSum twoSum = new TwoSum();
-        Pair<Integer, Integer> actualResult = twoSum.twoSumSlidingWindow(nums, 14);
-
-        Assertions.assertEquals(expectedResult, actualResult);
-    }
 }

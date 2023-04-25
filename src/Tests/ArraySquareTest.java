@@ -8,8 +8,8 @@ public class ArraySquareTest {
 
     @Test
     void testArraySquare() {
-        int[] nums = {-4, -2, -1, 0, 3, 5};
-        int[] expectedResult = {0, 1, 4, 9, 16, 25};
+        int[] nums = {-7,-3,2,3,11};
+        int[] expectedResult = {4,9,9,49,121};
 
         ArraySquare arraySquare = new ArraySquare();
         int[] actualResult = arraySquare.arraySquare(nums);
