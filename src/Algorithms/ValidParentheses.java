@@ -10,7 +10,6 @@ Open brackets must be closed in the correct order.
 Every close bracket has a corresponding open bracket of the same type.
  */
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class ValidParentheses {
@@ -51,20 +50,4 @@ public class ValidParentheses {
     }
     // Time: O(n)
     // Memory: O(1)
-
-    public int test(String str) {
-        int i = 1;
-
-        for (Character ch: str.toCharArray()) {
-            if (ch == ' ') {
-                i += 1;
-            }
-        }
-
-        ArrayList list = new ArrayList();
-
-        return i;
-
-    }
-
 }

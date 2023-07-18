@@ -11,7 +11,7 @@ public class PalindromeNumber {
         int result = 0;
         int nums = num;
 
-        while(num > 0) {
+        while (num > 0) {
             result = result * 10 + num % 10;
             num = num / 10;
         }

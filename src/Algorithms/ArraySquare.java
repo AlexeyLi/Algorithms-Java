@@ -25,12 +25,12 @@ public class ArraySquare {
         int[] result = new int[nums.length];
         int resultEnd = result.length - 1;
 
-        while (start < end) {
+        while (start <= end) {
             if (abs(nums[start]) > abs(nums[end])) {
-                result[resultEnd] = square(abs(nums[start]));
+                result[resultEnd] = square(nums[start]);
                 start += 1;
             } else {
-                result[resultEnd] = square(abs(nums[end]));
+                result[resultEnd] = square(nums[end]);
                 end -= 1;
             }
             resultEnd -= 1;

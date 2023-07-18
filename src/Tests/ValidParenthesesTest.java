@@ -25,16 +25,4 @@ public class ValidParenthesesTest {
 
         Assertions.assertFalse(validParentheses.solution(str));
     }
-
-    @Test
-    void test() {
-        String str = "This month is march";
-
-        ValidParentheses validParentheses = new ValidParentheses();
-
-        int actualResult = validParentheses.test(str);
-        int expectedResult = 4;
-
-        Assertions.assertEquals(expectedResult, actualResult);
-    }
 }
